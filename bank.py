@@ -12,7 +12,7 @@ class BankAccount:
 
     def save_transaction_to_file(self):
         try:
-            file_name = f"{self.account_holder}_transactions.txt"
+            file_name = f"{self.account_holder}.txt"
             with open(file_name, "w") as file:
                 for transaction in self.transactions:
                     file.write(f"{transaction}\n")
